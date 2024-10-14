@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
+import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.util.HashMap;
 import java.util.List;
@@ -26,8 +27,8 @@ public class ChatController {
 
     //代理可以为null
     //端口是你的魔法端口
-//    static Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 1081));
-    Proxy proxy = Proxy.NO_PROXY;
+    static Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 7890));
+//    Proxy proxy = Proxy.NO_PROXY;
 
     //实际请用数据库管理上下文
     private static Map<String, List<Message>> context = new HashMap<>();

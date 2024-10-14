@@ -6,5 +6,4 @@ server:
 #????KEY????? at least 2
 keys:
   list:
-    - sk-xxxxxxxxxxx
-    - sk-xxxxxxxxxxx
+    - xxx

@@ -1,12 +1,16 @@
 package com.plexpt.chatgptonlinejava.app;
 
 import com.plexpt.chatgpt.entity.chat.Message;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class ChatParam {
 
